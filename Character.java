@@ -3,31 +3,35 @@ import java.awt.*;
 import java.awt.event.*;
 
 public class Character extends JFrame /*implements ActionListener*/ {
-    private Container paneBox, paneTitle, paneInputs;
-    private JLabel title, inputName;
+    private Container pane;
+    private JLabel title, inputName, inputSubjects, inputTraits;
     private JTextField name;
+    private JComboBox subjects, traits;
     private JButton submit;
 
     public Character() {
-	//paneBox
 	this.setTitle("Make your Stuy Student");
-	this.setSize(500,500);
+	this.setSize(500,200);
 	this.setLocation(100,100);
 	this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 
-	//title = new JLabel("Character Info");
-	//title.setFont( new Font("Serif", Font.PLAIN, 18) );
+	title = new JLabel("Character Info");
+	title.setFont( new Font("Serif", Font.PLAIN, 18) );
         inputName = new JLabel("Name:", null, JLabel.CENTER);
 	name = new JTextField(16);
+	inputSubjects = new JLabel("Choose your favorite class", null, JLabel.CENTER);
+	//String[] subjectList = { "Science", "Math", "History", "Computer Science" };
+	//subjects = new JComboBox(subjectList);
+	submit = new JButton("Submit");
 
-	//paneTitle = this.getContentPane();
-	//System.out.println(pane);
-	//paneTitle.setLayout( new BoxLayout(paneTitle, BoxLayout.Y_AXIS) );
+	pane = this.getContentPane();
+	pane.setLayout( new BoxLayout(pane, BoxLayout.Y_AXIS) );
 
-	paneInputs = this.getContentPane();
-	//paneInputs.add(title);
-	//paneInputs.add(inputName);
-	//paneInputs.add(name);
+	pane.add(title);
+	pane.add(inputName);
+	pane.add(name);
+	pane.add(inputSubjects);
+	pane.add(submit);
 
     }
     
