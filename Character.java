@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class Character extends JFrame /*implements ActionListener*/ {
+public class Character extends JFrame implements ActionListener {
     private Container pane;
     private JLabel title, inputName, inputSubjects, inputTraits;
     private JTextField name;
@@ -36,6 +36,9 @@ public class Character extends JFrame /*implements ActionListener*/ {
 	pane = this.getContentPane();
 	pane.setLayout( new BoxLayout(pane, BoxLayout.Y_AXIS) );
 
+	submit.addActionListener(this);
+	submit.setActionCommand("Submitted");
+
 	pane.add(title);
 	pane.add(inputName);
 	pane.add(name);
@@ -51,17 +54,16 @@ public class Character extends JFrame /*implements ActionListener*/ {
 
     }
     
-    /**
     public void actionPerformed(ActionEvent e) {
 	String event = e.getActionCommand();
-	if ( event.equals() ) {
+	if ( event.equals("Submitted") ) {
+	    System.exit(0);
+	}
+	/* if ( event.equals() ) {
 	    
 	}
-	if ( event.equals() ) {
-	    
-	}
+	*/
     }
-    **/
     
     public static void main(String[] args) {
 	Character c = new Character();
