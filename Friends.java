@@ -3,7 +3,7 @@ public abstract class Friends{
     boolean hangAfterSchool;
     
     abstract void setCut();
-    abstract void setTimeHome();
+    abstract void setHangAfterSchool();
 
 
     public boolean getCut(){
