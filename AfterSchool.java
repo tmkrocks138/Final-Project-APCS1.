@@ -2,7 +2,7 @@ import java.lang.Math;
 
 public class AfterSchool{
 
-    boolean busy;
+    public boolean busy;
 
     public boolean isBusy(String trait){
 	int num = (int)(Math.random() * 10)+1;
