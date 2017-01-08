@@ -13,7 +13,7 @@ public class Character extends JFrame implements ActionListener {
     @SuppressWarnings("unchecked")
     public Character() {
 	this.setTitle("Make your Stuy Student");
-	this.setSize(400,300);
+	this.setSize(400,328);
 	this.setLocation(100,100);
 	this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 
