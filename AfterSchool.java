@@ -36,13 +36,14 @@ public class AfterSchool{
 	boolean bee = this.isBusy(trait);
 	System.out.println("After a long hard day of classes, you have finally reached the end of the day!!");
 	System.out.println("Today, you have no activities to do after school");
-	if(bee = true){
+	System.out.println("");
+	if(bee == true){
 	    System.out.println("Because of that, you have chosen to go home on time");
 	    System.out.println("You need to get a start on your homework");
 	}
 	
 	else if (bff == false){
-	System.out.println("You want to hang out with a friend since you have tie");
+	System.out.println("You want to hang out with a friend since you have time");
 	System.out.println("However, your best friend is busy so you have to go home");
 	}
 	else{
