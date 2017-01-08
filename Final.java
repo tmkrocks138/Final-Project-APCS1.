@@ -3,6 +3,11 @@ public class Final{
 This is all of the parts added together
 */
 
+    public static void main(String[] args){
+	int social = 0;
+	int school = 0;
+	int stress = 0;
+
 //Create a character
 
 
@@ -34,6 +39,6 @@ This is all of the parts added together
 
 
 
-
+}
 
 }
