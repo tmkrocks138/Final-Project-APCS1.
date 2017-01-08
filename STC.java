@@ -1,4 +1,4 @@
-public class STC extend Friends{
+public class STC extends Friends{
     private String play = "";
     
     public void setCut(){
