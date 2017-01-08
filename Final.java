@@ -10,7 +10,9 @@ This is all of the parts added together
 
 //Create a character
 
-
+	/*Character c = new Character();
+	c.setVisible(true);
+	*/
 
 
 //Wake up
