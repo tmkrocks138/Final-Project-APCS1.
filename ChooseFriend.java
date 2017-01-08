@@ -1,4 +1,4 @@
-   
+import java.lang.Math;   
 
 public class ChooseFriend{
 
@@ -10,13 +10,18 @@ public class ChooseFriend{
       e - nerd
      */
     
-    Friends a = new Jock();
-    Friends b = new Slacker();
-    Friends c = new STC();
-    Friends d = new SandD();
-    Friends e = new Nerd();
+    public Friends a = new Jock();
+    public Friends b = new Slacker();
+    public Friends c = new STC();
+    public Friends d = new SandD();
+    public Friends e = new Nerd();
 
-    Friends[] listy = {a, b, c, d, e};
+    public Friends[] listy = {a, b, c, d, e};
 
+    public Friends SetBFF(){
+	int rand = (int) (Math.random() * 100);
+	rand = rand % 5;
 
+	return listy[rand];
+    }
 }
