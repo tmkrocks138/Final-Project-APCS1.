@@ -29,10 +29,11 @@ This is all of the parts added together
 
 //After School
 
-
-
-
-
+	AfterSchool as = new AfterSchool();
+	as.scene("Friendly", true);
+	System.out.println("");
+	System.out.println("Enter ok to continue");
+	user_input.next( );
 
 //Homework
 
