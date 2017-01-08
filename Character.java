@@ -13,20 +13,20 @@ public class Character extends JFrame implements ActionListener {
     @SuppressWarnings("unchecked")
     public Character() {
 	this.setTitle("Make your Stuy Student");
-	this.setSize(400,328);
+	this.setSize(310,250);
 	this.setLocation(100,100);
 	this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 
 	//COMPONENTS
 	title = new JLabel("Character Info");
 	title.setFont( new Font("Serif", Font.PLAIN, 18) );
-        inputName = new JLabel("Name:", null, JLabel.CENTER);
+        inputName = new JLabel("Name:", null, JLabel.LEFT);
 	name = new JTextField(8);
-	inputSubjects = new JLabel("Choose your favorite class:", null, JLabel.CENTER);
+	inputSubjects = new JLabel("Choose your favorite class:", null, JLabel.LEFT);
 	String[] subjectList = {"Science", "Math", "History", "Computer Science"};
 	subjects = new JComboBox(subjectList);
 	submit = new JButton("Submit");
-	inputTraits = new JLabel("Choose your traits:", null, JLabel.CENTER);
+	inputTraits = new JLabel("Choose your traits:", null, JLabel.LEFT);
 	String[] traitList = {"Hardworking", "Shy", "Lazy", "Friendly", "Forgetful"};
 	traits = new JComboBox(traitList);
 	/*
@@ -39,7 +39,7 @@ public class Character extends JFrame implements ActionListener {
 	
 	//LAYOUT
 	pane = this.getContentPane();
-	pane.setLayout( new BoxLayout(pane, BoxLayout.Y_AXIS) );
+	pane.setLayout( new BoxLayout(pane, BoxLayout.PAGE_AXIS) );
 
 	//ACTION LISTENER STUFF
 	submit.addActionListener(this);
