@@ -23,6 +23,15 @@ public class AfterSchool{
 	return busy;
     }
 
+     public boolean late(String trait, boolean bff){
+	boolean bee = this.isBusy(trait);
+	if (bff == true && bee == false){
+	    return true;
+	}
+	return false;
+    }
+
+
  public void scene(String trait, boolean bff){
 	boolean bee = this.isBusy(trait);
 	System.out.println("After a long hard day of classes, you have finally reached the end of the day!!");
