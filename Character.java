@@ -6,8 +6,8 @@ public class Character extends JFrame implements ActionListener {
     private Container pane;
     private JLabel title, inputName, inputSubjects, inputTraits;
     private JTextField name;
-    private JComboBox subjects;
-    private JCheckBox trait1,trait2,trait3,trait4,trait5;
+    private JComboBox subjects, traits;
+    //private JCheckBox trait1,trait2,trait3,trait4,trait5;
     private JButton submit;
 
     @SuppressWarnings("unchecked")
@@ -17,6 +17,7 @@ public class Character extends JFrame implements ActionListener {
 	this.setLocation(100,100);
 	this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 
+	//COMPONENTS
 	title = new JLabel("Character Info");
 	title.setFont( new Font("Serif", Font.PLAIN, 18) );
         inputName = new JLabel("Name:", null, JLabel.CENTER);
@@ -26,30 +27,39 @@ public class Character extends JFrame implements ActionListener {
 	subjects = new JComboBox(subjectList);
 	submit = new JButton("Submit");
 	inputTraits = new JLabel("Choose your traits:", null, JLabel.CENTER);
+	String[] traitList = {"Hardworking", "Shy", "Lazy", "Friendly", "Forgetful"};
+	traits = new JComboBox(traitList);
+	/*
 	trait1 = new JCheckBox("Hardworking");
 	trait2 = new JCheckBox("Shy");
 	trait3 = new JCheckBox("Lazy");
 	trait4 = new JCheckBox("Friendly");
 	trait5 = new JCheckBox("Forgetful");
+	*/
 	
-	
+	//LAYOUT
 	pane = this.getContentPane();
 	pane.setLayout( new BoxLayout(pane, BoxLayout.Y_AXIS) );
 
+	//ACTION LISTENER STUFF
 	submit.addActionListener(this);
 	submit.setActionCommand("Submitted");
 
+	//ADD COMPONENTS ONTO GUI
 	pane.add(title);
 	pane.add(inputName);
 	pane.add(name);
 	pane.add(inputSubjects);
 	pane.add(subjects);
 	pane.add(inputTraits);
+	pane.add(traits);
+	/*
 	pane.add(trait1);
 	pane.add(trait2);
 	pane.add(trait3);
 	pane.add(trait4);
 	pane.add(trait5);
+	*/
 	pane.add(submit);
 
     }
@@ -57,12 +67,14 @@ public class Character extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
 	String event = e.getActionCommand();
 	if ( event.equals("Submitted") ) {
+	    String characterName = name.getText();
+	    String subject = (String)subjects.getSelectedItem();
+	    String trait = (String)traits.getSelectedItem();
+	    System.out.println("Name: " + characterName + "\n" +
+			       "Subject: " + subject + "\n" +
+			       "Trait: " + trait);
 	    System.exit(0);
-	}
-	/* if ( event.equals() ) {
-	    
-	}
-	*/
+	}	
     }
     
     public static void main(String[] args) {

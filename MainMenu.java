@@ -13,20 +13,27 @@ public class MainMenu extends JFrame implements ActionListener {
 	this.setLocation(100,100);
 	this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 
+	//COMPONENTS
 	//title = new JLabel ("Life of a Stuy Student");
 	newCharacter = new JButton("Make a New Character");
 	newGame = new JButton("Start a New Game");
 	continueGame = new JButton("Continue Game");
 	options = new JButton("Options");
 	quit = new JButton("Quit");
-	
+
+	//LAYOUT
 	pane = this.getContentPane();
 	//pane.setLayout( new BoxLayout(pane, BoxLayout.Y_AXIS) );
 	pane.setLayout( new BorderLayout() );
-	
+
+	//ACTION LISTENER STUFF
+	newCharacter.addActionListener(this);
+	newCharacter.setActionCommand("newCharacter");
 	quit.addActionListener(this);
 	quit.setActionCommand("quit");
-	
+
+
+	//ADD COMPONENTS ONTO GUI
 	//pane.add(title, BorderLayout.PAGE_START);
 	pane.add(newCharacter, BorderLayout.PAGE_START);
 	pane.add(newGame, BorderLayout.LINE_START);
@@ -38,6 +45,10 @@ public class MainMenu extends JFrame implements ActionListener {
 
     public void actionPerformed(ActionEvent e) {
 	String event = e.getActionCommand();
+	if ( event.equals("newCharacter") ) {
+	    Character c = new Character();
+	    
+	}
 	if ( event.equals("quit") ) {
 	    System.exit(0);
 	}
