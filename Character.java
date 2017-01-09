@@ -76,6 +76,16 @@ public class Character extends JFrame implements ActionListener {
 	    System.exit(0);
 	}	
     }
+
+    public String getCharName() {
+	return characterName;
+    }
+    public String getSubject() {
+	return subject;
+    }
+    public String getTrait() {
+	return trait;
+    }
     
     public static void main(String[] args) {
 	Character c = new Character();
