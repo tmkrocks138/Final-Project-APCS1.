@@ -46,23 +46,23 @@ public class Homework{
 
     public void sleep(String opt){
 		System.out.println("You have made your choice");
-	if (opt == "1"){
+	if (opt.equals("1")){
 	    System.out.println("You stay up really late but get all your homework done.");
 
 	}
-	else if (opt == "2"){
+	else if (opt.equals("2")){
 	    System.out.println("You finish your history homework, but you upset Mr.K");
 
 	}
-	else if (opt == "3"){
+	else if (opt.equals("3")){
 	    System.out.println("Yay!! You do your CS homework! Your Priorities are sorted!");
 
 	}
-	else if (opt == "4"){
+	else if (opt.equals("4")){
 	    System.out.println("That is academically dishonest, but you have both homeworks done");
 
 	}
-	else if (opt == "5"){
+	else if (opt.equals("5")){
 	    System.out.println("School is overated anyways! Why go when you could stay home?");
 
 	}    
