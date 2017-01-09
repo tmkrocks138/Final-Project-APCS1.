@@ -22,7 +22,7 @@ public class Character extends JFrame implements ActionListener {
 	title.setFont( new Font("Serif", Font.PLAIN, 18) );
         inputName = new JLabel("Name:", null, JLabel.LEFT);
 	name = new JTextField(8);
-	inputSubjects = new JLabel("Choose your favorite class:", null, JLabel.LEFT);
+	inputSubjects = new JLabel("Choose a class:", null, JLabel.LEFT);
 	String[] subjectList = {"Science", "Math", "History", "Computer Science"};
 	subjects = new JComboBox(subjectList);
 	submit = new JButton("Submit");
