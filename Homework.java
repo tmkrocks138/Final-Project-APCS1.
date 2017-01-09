@@ -45,7 +45,7 @@ public class Homework{
     }
 
     public void sleep(String opt){
-		System.out.println("You have made your choice");
+	//System.out.println("You have made your choice");
 	if (opt.equals("1")){
 	    System.out.println("You stay up really late but get all your homework done.");
 
