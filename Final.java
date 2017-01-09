@@ -49,11 +49,18 @@ This is all of the parts added together
 	System.out.println("");
 	System.out.println("Enter ok to continue");
 	user_input.next( );
-
+	boolean late = as.late("Friendly", bffAS);
 //Homework
 
+	Homework hw = new Homework();
+	hw.scene("Friendly", late);
+	String homeChoice = hw.getOption();
+	hw.sleep(homeChoice);
+//	System.out.println(homeChoice);
+	System.out.println("Enter ok to recieve your score");
+	user_input.next( );
 
-
+//Score Calculation
 
 
 
