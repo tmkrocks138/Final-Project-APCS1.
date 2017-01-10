@@ -18,8 +18,8 @@ public class Morning{
 	String snooze = user_input.next();
 
 	if (snooze.equals("yes")){
-	    AlarmClock a = new AlarmClock();
-	    a.setVisible(true);
+//	    AlarmClock a = new AlarmClock();
+//	    a.setVisible(true);
 	    System.out.println("");
 	    System.out.println("Sadly, due to snoozing your alarm clock (and train delays)");
 	    System.out.println("you got to school late");
