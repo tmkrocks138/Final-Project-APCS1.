@@ -14,46 +14,84 @@ This is all of the parts added together
 
 //Create a character
 
-	/*Character c = new Character();
+	Character c = new Character();
 	c.setVisible(true);
-	String trait=getTrait();
-	String subject = getSubject();
-	*/
+	String trait=c.getTrait();
+	String subject = c.getSubject();
 
 	ChooseFriend cf = new ChooseFriend();
 	Friends BFF = cf.SetBFF();
 	BFF.setCut();
 	BFF.setHangAfterSchool();
 
-	System.out.println(BFF);	
+		System.out.println("You have been randomly assigned a best friend.");
+	//Explain bff
+	//System.out.println(BFF);
+
+	if (BFF.equals(cf.getA())){
+	    System.out.println("Your best friend is a jock (yes they exist at Stuy)");
+		}
+
+	if (BFF.equals(cf.getB())){
+	    System.out.println("Your best friend is a bit of an 'underachiever'");
+		}
+	if (BFF.equals(cf.getC())){
+	    System.out.println("Your best friend loves theater and is heavily involved in STC");
+		}
+	if (BFF.equals(cf.getD())){
+	    System.out.println("Your best friend is a member of the Stuyvesant Debate Team");
+		}
+	if (BFF.equals(cf.getE())){
+	    System.out.println("Your best friend is just your average student ..  a nerd");
+		}
+
+	System.out.println("Enter ok to continue");
+	user_input.next( );
 	
 	boolean bffCut = BFF.getCut(); 
 	boolean bffAS = BFF.getHangAfterSchool();
-	System.out.println(bffAS);
+//System.out.println(bffAS);
+
+
 //Wake up
 
-
+boolean uplate = true;
 
 
 
 //Class
 
 
-
+	Classtime ct = new Classtime();
+	ct.scene(trait, bffCut, subject, uplate);
+	boolean uCut = ct.getCut();
+	String cutWhere = "3";
+	if (uCut){
+	    cutWhere = ct.getWhere();//1-half floor 2-Cafe
+	}
+	boolean sleepInClass = false;
+	if (!uCut){
+	    sleepInClass = ct.getSleep();
+	}
+	String wakeBuddy="NA";
+	if(!uCut){
+	    wakeBuddy = ct.getWakeFriend();
+	}
+	
 
 
 //After School
 
 	AfterSchool as = new AfterSchool();
-	as.scene("Friendly", bffAS);
+	as.scene(trait, bffAS);
 	System.out.println("");
 	System.out.println("Enter ok to continue");
 	user_input.next( );
-	boolean late = as.late("Friendly", bffAS);
+	boolean late = as.late(trait, bffAS);
 //Homework
 
 	Homework hw = new Homework();
-	hw.scene("Friendly", late);
+	hw.scene(trait, late);
 	String homeChoice = hw.getOption();
 	hw.sleep(homeChoice);
 //	System.out.println(homeChoice);
@@ -64,6 +102,8 @@ This is all of the parts added together
 
 
 
+
+System.exit(0);
 }
 
 }
