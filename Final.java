@@ -55,7 +55,9 @@ This is all of the parts added together
 
 //Wake up
 
-boolean uplate = true;
+Morning gm = new Morning();
+gm.scene();
+boolean uplate = gm.getLate();
 
 
 

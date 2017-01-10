@@ -33,13 +33,8 @@ public class AlarmClock extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
 	String event = e.getActionCommand();
 	if ( event.equals("Snoozed") ) {
-	    
-	    System.exit(0);
+	   a.setVisible(false); 
 	}	
     }
     
-    public static void main(String[] args) {
-	AlarmClock a = new AlarmClock();
-	a.setVisible(true);
-    }
 }
