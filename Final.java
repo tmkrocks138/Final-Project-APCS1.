@@ -42,7 +42,7 @@ This is all of the parts added together
 	    System.out.println("Your best friend is a member of the Stuyvesant Debate Team");
 		}
 	if (BFF.equals(cf.getE())){
-	    System.out.println("Your best friend is just your average student ..  a nerd");
+	    System.out.println("Your best friend is just your average student ...  a nerd");
 		}
 
 	System.out.println("Enter ok to continue");
