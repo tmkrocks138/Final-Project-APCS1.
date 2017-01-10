@@ -97,7 +97,9 @@ boolean uplate = gm.getLate();
 	String homeChoice = hw.getOption();
 	hw.sleep(homeChoice);
 //	System.out.println(homeChoice);
-	System.out.println("Enter ok to recieve your score");
+System.out.println("");
+	System.out.println("YOU SURVIVED A DAY AT STUY!!");
+	System.out.println("Enter ok to close the program");
 	user_input.next( );
 
 //Score Calculation
