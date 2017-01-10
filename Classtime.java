@@ -29,11 +29,11 @@ public String getWakeFriend(){
 	System.out.println("After finishing some of your classes, you hear a rumor you have a sub next period");
 	System.out.println("Do you want to cut that class? (Type yes or no)");
 	String cutS = user_input.next();
-	if (cutS == "yes"){
+	if (cutS.equals("yes")){
 	    cut = true;
 	    this.cutScene(friendCut);
 	}
-	else if(cutS == "no"){
+	else if(cutS.equals("no")){
 	    cut = false;
 	    this.noCutScene(trait, subject, late);
 	}
