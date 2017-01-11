@@ -42,7 +42,7 @@ This is all of the parts added together
 	    System.out.println("Your best friend is a member of the Stuyvesant Debate Team");
 		}
 	if (BFF.equals(cf.getE())){
-	    System.out.println("Your best friend is just your average student ..  a nerd");
+	    System.out.println("Your best friend is just your average student ...  a nerd");
 		}
 
 	System.out.println("Enter ok to continue");
@@ -55,7 +55,9 @@ This is all of the parts added together
 
 //Wake up
 
-boolean uplate = true;
+Morning gm = new Morning();
+gm.scene();
+boolean uplate = gm.getLate();
 
 
 
@@ -95,7 +97,9 @@ boolean uplate = true;
 	String homeChoice = hw.getOption();
 	hw.sleep(homeChoice);
 //	System.out.println(homeChoice);
-	System.out.println("Enter ok to recieve your score");
+System.out.println("");
+	System.out.println("YOU SURVIVED A DAY AT STUY!!");
+	System.out.println("Enter ok to close the program");
 	user_input.next( );
 
 //Score Calculation
