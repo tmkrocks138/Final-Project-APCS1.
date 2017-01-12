@@ -141,6 +141,35 @@ System.out.println("");
 	    }
 	}
 
+	if (late){
+	    social += 3;
+	}
+	
+	else if (!late){
+	    school += 2;
+	}
+
+	
+	if (homeChoice.equals("1")){
+	    school += 4;
+	}
+	else if (homeChoice.equals("2")){
+	    school += 1;
+	    relax += 1;
+	}
+	else if (homeChoice.equals("3")){
+	    school += 1;
+	    relax += 1;
+	}
+	else if (homeChoice.equals("4")){
+	    school += 2;
+	    relax += 1;
+	    social += 2;
+	}
+	else if (homeChoice.equals("5")){
+	    relax += 4;
+	}
+
 System.exit(0);
 
 }
