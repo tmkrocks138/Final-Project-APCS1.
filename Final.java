@@ -7,9 +7,6 @@ This is all of the parts added together
 */
 
     public static void main(String[] args){
-	int social = 0;
-	int school = 0;
-	int stress = 0;
         Scanner user_input = new Scanner( System.in );
 
 //Create a character
@@ -54,7 +51,8 @@ This is all of the parts added together
         String trait=c.getTrait();
         String subject = c.getSubject();
 //System.out.println(subject);
-/*
+
+
 //Wake up
 
 Morning gm = new Morning();
@@ -106,9 +104,6 @@ System.out.println("");
 
 //Score Calculation
 
-
-
-*/
 
 System.exit(0);
 
