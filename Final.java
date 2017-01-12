@@ -108,6 +108,14 @@ System.out.println("");
 	int school = 0;
 	int social = 0;
 
+	if (uplate){
+	    relax += 1;
+	}
+
+	else if (!uplate){
+	    school += 1;
+	}
+
 
 System.exit(0);
 
