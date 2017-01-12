@@ -16,9 +16,9 @@ This is all of the parts added together
 
 	Character c = new Character();
 	c.setVisible(true);
-	String trait=c.getTrait();
-	String subject = c.getSubject();
-
+//	String trait=c.getTrait();
+//	String subject = c.getSubject();
+//System.out.println(subject);
 	ChooseFriend cf = new ChooseFriend();
 	Friends BFF = cf.SetBFF();
 	BFF.setCut();
@@ -51,8 +51,10 @@ This is all of the parts added together
 	boolean bffCut = BFF.getCut(); 
 	boolean bffAS = BFF.getHangAfterSchool();
 //System.out.println(bffAS);
-
-
+        String trait=c.getTrait();
+        String subject = c.getSubject();
+//System.out.println(subject);
+/*
 //Wake up
 
 Morning gm = new Morning();
@@ -106,8 +108,10 @@ System.out.println("");
 
 
 
+*/
 
 System.exit(0);
+
 }
 
 }
