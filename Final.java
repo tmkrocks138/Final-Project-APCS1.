@@ -104,6 +104,10 @@ System.out.println("");
 
 //Score Calculation
 
+	int relax = 0;
+	int school = 0;
+	int social = 0;
+
 
 System.exit(0);
 
