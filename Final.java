@@ -115,7 +115,22 @@ System.out.println("");
 	else if (!uplate){
 	    school += 1;
 	}
-
+	if (uCut){
+	    relax += 2;
+	    if(cutWhere.equals("1")){
+		social += 2;
+		if (bffCut){
+		    social += 2;
+		}
+	    }
+	    else if (cutWhere.equals("2")){
+		school += 1;
+		if (bffCut){
+		    social += 1;
+		}
+	    
+	    }
+	}
 
 System.exit(0);
 
