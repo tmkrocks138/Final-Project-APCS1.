@@ -109,11 +109,11 @@ System.out.println("");
 	int social = 0;
 
 	if (uplate){
-	    relax += 1;
+	    relax += 2;
 	}
 
 	else if (!uplate){
-	    school += 1;
+	    school += 2;
 	}
 	if (uCut){
 	    relax += 2;
@@ -129,6 +129,15 @@ System.out.println("");
 		    social += 1;
 		}
 	    
+	    }
+}
+	else if (!uCut){
+	    school += 3;
+	    if (sleepInClass){
+		relax+=1;
+	    }
+	    if(wakeBuddy.equals("yes")){
+		social += 2;
 	    }
 	}
 
