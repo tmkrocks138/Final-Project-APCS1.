@@ -10,7 +10,7 @@ public class AlarmClock extends JFrame implements ActionListener {
 
     public AlarmClock() {
 	this.setTitle("Alarm Clock");
-	this.setSize(240,285);
+	this.setSize(240,330);
 	this.setLocation(100,100);
 	this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 
@@ -33,8 +33,12 @@ public class AlarmClock extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
 	String event = e.getActionCommand();
 	if ( event.equals("Snoozed") ) {
-	   a.setVisible(false); 
+	    //System.exit(0);
 	}	
     }
     
+    public static void main(String[] args) {
+	AlarmClock a = new AlarmClock();
+	a.setVisible(true);
+    }
 }
