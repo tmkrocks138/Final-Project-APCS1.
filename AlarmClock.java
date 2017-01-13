@@ -14,9 +14,9 @@ public class AlarmClock extends JFrame implements ActionListener {
 	this.setLocation(100,100);
 	this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 
-	ring = new JLabel("RING! RING!", SwingConstants.CENTER);
+	ring = new JLabel("RING! RING!");
 	snooze = new JButton( new ImageIcon("Clock.png") );
-	question = new JLabel("Do you want to sleep in?", SwingConstants.CENTER);
+	question = new JLabel("Do you want to sleep in?");
 
 	pane = this.getContentPane();
 	pane.setLayout( new BoxLayout(pane, BoxLayout.PAGE_AXIS) );
