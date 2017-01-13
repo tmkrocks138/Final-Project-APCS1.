@@ -99,10 +99,82 @@ boolean uplate = gm.getLate();
 //	System.out.println(homeChoice);
 System.out.println("");
 	System.out.println("YOU SURVIVED A DAY AT STUY!!");
-	System.out.println("Enter ok to close the program");
+	System.out.println("Enter ok to get your score");
 	user_input.next( );
 
-//Score Calculation
+	int relax = 0;
+	int school = 0;
+	int social = 0;
+
+	if (uplate){
+	    relax += 2;
+	}
+
+	else if (!uplate){
+	    school += 2;
+	}
+	if (uCut){
+	    relax += 2;
+	    if(cutWhere.equals("1")){
+		social += 3;
+		if (bffCut){
+		    social += 2;
+		}
+	    }
+	    else if (cutWhere.equals("2")){
+		school += 1;
+		if (bffCut){
+		    social += 1;
+		    relax +=1;
+		}
+	    
+	    }
+	}
+
+	else if (!uCut){
+	    school += 3;
+	    if (sleepInClass){
+		relax+=1;
+	    }
+	    if(wakeBuddy.equals("yes")){
+		social += 2;
+	    }
+	}
+	
+	if (late){
+	    social += 3;
+	}
+	
+	else if (!late){
+	    school += 1;
+	}
+
+	
+	if (homeChoice.equals("1")){
+	    school += 4;
+	}
+	else if (homeChoice.equals("2")){
+	    school += 1;
+	    relax += 1;
+	}
+	else if (homeChoice.equals("3")){
+	    school += 1;
+	    relax += 1;
+	}
+	else if (homeChoice.equals("4")){
+	    school += 2;
+	    relax += 1;
+	    social += 2;
+	}
+	else if (homeChoice.equals("5")){
+	    relax += 4;
+	}
+
+
+	System.out.println("Your relax score was "+relax+" out of 10");
+	System.out.println("Your school score was "+school+" out of 10");
+	System.out.println("Your social score was "+social+" out of 10");
+	
 
 
 
