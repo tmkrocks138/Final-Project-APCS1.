@@ -24,4 +24,19 @@ public class ChooseFriend{
 
 	return listy[rand];
     }
+    public Friends getA(){
+	return a;
+    }
+    public Friends getB(){ 
+        return b;
+    }
+    public Friends getC(){ 
+        return c;
+    }    
+    public Friends getD(){ 
+        return d;
+    }
+    public Friends getE(){ 
+        return e;
+    }
 }
