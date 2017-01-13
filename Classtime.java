@@ -29,11 +29,11 @@ public String getWakeFriend(){
 	System.out.println("After finishing some of your classes, you hear a rumor you have a sub next period");
 	System.out.println("Do you want to cut that class? (Type yes or no)");
 	String cutS = user_input.next();
-	if (cutS.equals("yes")){
+	if (cutS == "yes"){
 	    cut = true;
 	    this.cutScene(friendCut);
 	}
-	else if(cutS.equals("no")){
+	else{
 	    cut = false;
 	    this.noCutScene(trait, subject, late);
 	}
@@ -72,8 +72,9 @@ public String getWakeFriend(){
 	int num = (int)(Math.random() * 10)+1;
         Scanner user_input = new Scanner( System.in );	
         System.out.println("");
+        System.out.println(subject);
 	System.out.println("It seems to be a good idea to go to class because your normal teacher was there");
-	System.out.println("The "+subject+" class you were in was particularly boring");
+	System.out.println("The "+ subject +" class you were in was particularly boring");
 	System.out.println("");
 	
 	if(trait == "Lazy" && !lateToSchool){
@@ -83,7 +84,7 @@ public String getWakeFriend(){
 	}
 	else if (!lateToSchool && (num % 3 == 0)){
 	    sleep = true;
-	    System.out.println("Since you came into school ontime, you were tired and slowly dosed off");
+	    System.out.println("Since you came into school ontime, you were tired and slowly dozed off");
 	}
 	else{
 	    sleep = false;
@@ -107,4 +108,3 @@ public String getWakeFriend(){
     }
 
 }
-
