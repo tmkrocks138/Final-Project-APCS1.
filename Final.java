@@ -7,18 +7,15 @@ This is all of the parts added together
 */
 
     public static void main(String[] args){
-	int social = 0;
-	int school = 0;
-	int stress = 0;
         Scanner user_input = new Scanner( System.in );
 
 //Create a character
 
 	Character c = new Character();
 	c.setVisible(true);
-	String trait=c.getTrait();
-	String subject = c.getSubject();
-
+//	String trait=c.getTrait();
+//	String subject = c.getSubject();
+//System.out.println(subject);
 	ChooseFriend cf = new ChooseFriend();
 	Friends BFF = cf.SetBFF();
 	BFF.setCut();
@@ -51,6 +48,9 @@ This is all of the parts added together
 	boolean bffCut = BFF.getCut(); 
 	boolean bffAS = BFF.getHangAfterSchool();
 //System.out.println(bffAS);
+        String trait=c.getTrait();
+        String subject = c.getSubject();
+//System.out.println(subject);
 
 
 //Wake up
@@ -169,6 +169,15 @@ System.out.println("");
 	else if (homeChoice.equals("5")){
 	    relax += 4;
 	}
+<<<<<<< HEAD
+=======
+
+
+	System.out.println("Your relax score was "+relax+" out of 10");
+	System.out.println("Your school score was "+school+" out of 10");
+	System.out.println("Your social score was "+social+" out of 10");
+	
+>>>>>>> master
 
 
 	System.out.println("Your relax score was "+relax+" out of 10");
@@ -177,9 +186,8 @@ System.out.println("");
 	
 
 
-
-
 System.exit(0);
+
 }
 
 }
