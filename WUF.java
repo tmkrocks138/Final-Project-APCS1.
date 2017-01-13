@@ -11,7 +11,7 @@ public class WUF extends JFrame implements ActionListener {
 
     public WUF() {
 	this.setTitle("Wake up your friend!");
-	this.setSize(300,400);
+	this.setSize(300,356);
 	this.setLocation(100,100);
 	this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 
@@ -36,6 +36,8 @@ public class WUF extends JFrame implements ActionListener {
 	//ACTION LISTENER STUFF
 	poke.addActionListener(this);
 	poke.setActionCommand("Poked");
+	submit.addActionListener(this);
+	submit.setActionCommand("Submitted");
 	timer.setActionCommand("Ticked");
 
 	//ADD COMPONENTS ONTO GUI
@@ -60,6 +62,10 @@ public class WUF extends JFrame implements ActionListener {
 		timer.stop();
 		time.setText("Times up!");
 	    }
+	}
+	if ( event.equals("Submitted") ) {
+	    System.out.println(getClicks());
+	    System.exit(0);
 	}
     }
 
