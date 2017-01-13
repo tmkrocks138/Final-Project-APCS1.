@@ -169,6 +169,15 @@ System.out.println("");
 	else if (homeChoice.equals("5")){
 	    relax += 4;
 	}
+<<<<<<< HEAD
+=======
+
+
+	System.out.println("Your relax score was "+relax+" out of 10");
+	System.out.println("Your school score was "+school+" out of 10");
+	System.out.println("Your social score was "+social+" out of 10");
+	
+>>>>>>> master
 
 
 	System.out.println("Your relax score was "+relax+" out of 10");
