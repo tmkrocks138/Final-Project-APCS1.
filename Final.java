@@ -7,9 +7,6 @@ This is all of the parts added together
 */
 
     public static void main(String[] args){
-	int social = 0;
-	int school = 0;
-	int stress = 0;
         Scanner user_input = new Scanner( System.in );
 
 //Create a character
