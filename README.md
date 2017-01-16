@@ -8,7 +8,7 @@ These factors will effect your overall score at the end.<br>
 (DISCLAIMER: It is impossible to get a full score because Stuy students can't "have it all")<br><br><br>
 
 Although at first glance this may seem like just a boring terminal game, there are many secret gems in the adventure.<br>
-Some of things to try in the code include...<br>
+Some of things to try in the code include...
 <ul>
 <li>Snoozing the alarm clock(The First Choice)</li>
 <li>Waking up your friend(not always an option)</li>
