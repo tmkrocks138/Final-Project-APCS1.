@@ -39,7 +39,10 @@ public String getWakeFriend(){
 	}
 	
 	System.out.println("");
-      
+        System.out.println("Type ok to continue");
+	user_input.next();
+      System.out.println("");
+
     }
 
     public void cutScene (boolean friendCut){
@@ -72,9 +75,8 @@ public String getWakeFriend(){
 	int num = (int)(Math.random() * 10)+1;
         Scanner user_input = new Scanner( System.in );	
         System.out.println("");
-        System.out.println(subject);
-	System.out.println("It seems to be a good idea to go to class because your normal teacher was there");
-	System.out.println("The "+ subject +" class you were in was particularly boring");
+       	System.out.println("It seems to be a good idea to go to class because your normal teacher was there");
+	System.out.println(subject +" class you were in was particularly boring");
 	System.out.println("");
 	
 	if(trait == "Lazy" && !lateToSchool){
