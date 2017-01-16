@@ -1,0 +1,37 @@
+1) Place the following types of electromagnetic radiation in order of increasing wavelength.
+ultraviolet light, gamma rays, radio waves
+A) gamma rays < radio waves < ultraviolet light
+B) radio waves < ultraviolet light < gamma rays
+C) radio waves < gamma rays < ultraviolet light
+D) ultraviolet light < gamma rays < radio waves
+E) gamma rays < ultraviolet light < radio waves
+
+2) Which of the following statements are TRUE?
+A) We can sometimes know the exact location and speed of an electron at the same time.
+B) All orbitals in a given atom are roughly the same size.
+C) Since electrons have mass, we must always consider them to have particle properties and never wavelike properties.
+D) Atoms are roughly spherical because when all of the different shaped orbitals are overlapped, they take on a spherical shape.
+E) All of the above are true.
+
+3) How many unpaired electrons are present in the ground state P atom?
+A) 0
+B) 3
+C) 1
+D) 2
+E) 4
+
+4) Place the following elements in order of increasing electronegativity.
+K, Cs, P
+A) P < K < Cs
+B) K < P < Cs
+C) Cs < P < K
+D) Cs < K < P
+E) P < Cs < K
+
+5) How many of the following molecules are polar?
+XeO2, SiCl2Br2, C2Br2, SeCl6
+A) 1
+B) 4
+C) 2
+D) 3
+E) 0

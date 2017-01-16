@@ -1,0 +1,29 @@
+1) The centripetal force exerted on stunt motorcyclist Biker Bob while riding on the inner vertical surface of a circular track is...
+A) friction
+B) his weight
+C) the normal force
+D) none of the above
+
+2) Stunt motorcyclist Biker Bob rides his bike inside a futuristic rotating space station- a giant rotating donut-shaped structure in space. The normal support force feels like weight to him. As he rides his bike in the opposite direction to the station's rotation, the normal force...
+A) remains unaffected
+B) increases
+C) decreases
+
+3) The resistance an object has to changes in its rotational state of motion is called rotational...
+A) inertia
+B) momentum
+C) torque
+D) acceleration
+E) velocity
+
+4) Momentum is defined as
+A) mass x force
+B) force x distance
+C) mass x velocity
+D) mass x acceleration
+
+5) "A body continues in its state of rest or uniform motion in a straight line unless acted upon by a force" is a statement of
+A) Newton's first law of motion
+B) Newton's law of gravitation
+C) Newton's second of law of motion
+D) Newton's third law of motion

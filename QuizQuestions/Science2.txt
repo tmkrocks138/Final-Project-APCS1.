@@ -1,0 +1,29 @@
+1) Which of the following are products of the light reactions of photosynthesis that are utilized in the Calvin cycle?
+A) ADP, Pi, and NADP+
+B) H2O and O2
+C) ATP and NADPH
+D) CO2 and glucose
+
+2) Which of the following sequences correctly represents the flow of electrons during photosynthesis?
+A) NADPH->chlorophyll->Calvin Cycle
+B) H2O->NADPH->Calvin Cycle 
+C) NADPH->O2->CO2
+D) NADPH->electron transport chain->O2
+
+3) In the absence of oxygen, yeast cells can obtain energy by fermentation, resulting in the production of ________.
+A) ATP, NADH, and pyruvate
+B) ATP, CO2, and ethanol (ethyl alcohol)
+C) ATP, CO2, and lactate
+D) ATP, pyruvate, and acetyl CoA
+
+4) In a plant cell, DNA may be found _________.
+A) only in the nucleus
+B) in the nucleus, mitochondria, and chloroplasts
+C) in the nucleus, mitochondria, chloroplasts, and peroxisomes 
+D) only in the nucleus and chloroplasts
+
+5) Which structure is common to plant and animal cells?
+A) chloroplast
+B) centriole
+C) mitochondrion
+D) central vacuole
