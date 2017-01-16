@@ -1,6 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.io.*;
 import java.util.Scanner;
 
 public class Quiz extends JFrame {
@@ -18,10 +19,14 @@ public class Quiz extends JFrame {
 
 	//COMPONENTS
 	title = new JLabel( subject+" Quiz" );
-	subject = Character.getSubject();
-	int ran = Math.random() * 3 + 1;
+	//subject = Character.getSubject();
+	subject = "Math";
+	int ran = (int)Math.random() * 3 + 1;
 	String filename = subject + ran;
-	Scanner fileIn = new Scanner( new File("/QuizQuestions/"+filename) );
+	Readfile r = new Readfile();
+	System.out.println(filename);
+	
+	/*
         if ( subject.equals("Science") ) {
 	    questions = 
 	}
@@ -38,7 +43,7 @@ public class Quiz extends JFrame {
 	    
 	}
 	    
-	
+	*/
 	
 	submit = new JButton("Done");
 	
