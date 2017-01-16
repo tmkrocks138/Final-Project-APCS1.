@@ -10,13 +10,13 @@ public class AlarmClock extends JFrame implements ActionListener {
 
     public AlarmClock() {
 	this.setTitle("Alarm Clock");
-	this.setSize(240,285);
+	this.setSize(240,330);
 	this.setLocation(100,100);
 	this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 
-	ring = new JLabel("RING! RING!", SwingConstants.CENTER);
+	ring = new JLabel("RING! RING!");
 	snooze = new JButton( new ImageIcon("Clock.png") );
-	question = new JLabel("Do you want to sleep in?", SwingConstants.CENTER);
+	question = new JLabel("Do you want to sleep in?");
 
 	pane = this.getContentPane();
 	pane.setLayout( new BoxLayout(pane, BoxLayout.PAGE_AXIS) );
@@ -33,8 +33,16 @@ public class AlarmClock extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
 	String event = e.getActionCommand();
 	if ( event.equals("Snoozed") ) {
-	   a.setVisible(false); 
+	    //System.exit(0);
+	    setVisible(false);
+	    
+
 	}	
     }
     
+/*    public static void main(String[] args) {
+	AlarmClock a = new AlarmClock();
+	a.setVisible(true);
+    }
+*/
 }
