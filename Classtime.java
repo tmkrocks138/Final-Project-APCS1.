@@ -7,11 +7,16 @@ public class Classtime{
     public String where;
     public boolean sleep;    
     public String wakeFriend;
+    public boolean wake = false;
     
 
     public boolean getSleep(){
 	return sleep;
     }
+
+public boolean getWake(){
+	return wake;
+}
 
     public boolean getCut(){
 	return cut;
@@ -102,9 +107,24 @@ public String getWakeFriend(){
 		System.out.println("Sadly, your friend gets yelled at. However it is better them than you");
 	    }
 	    else{
-		System.out.println("");
-		System.out.println("Yay, you looked out for your friend");
+                WakeUpFriend w = new WakeUpFriend();
+                w.setVisible(true);
+           	System.out.println("Type ok to continue");
+		user_input.next();
+		if (Integer.parseInt(w.getClicks()) <=5){
+			System.out.println("You didn't tap them enough and they didn't wake up");
 		}
+
+		else if(Integer.parseInt(w.getClicks())<= 10){
+		System.out.println("Yay, you looked out for your friend");
+		wake = true;
+		}
+	
+		else {
+		System.out.println("You poked them to many times and they got startled");
+System.out.println("You both got a glare from the teacher :(");
+}
+            }
 
 	}
     }

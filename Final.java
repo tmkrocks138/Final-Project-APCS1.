@@ -75,6 +75,7 @@ boolean uplate = gm.getLate();
 	if (!uCut){
 	    sleepInClass = ct.getSleep();
 	}
+	
 	String wakeBuddy="NA";
 	if(!uCut){
 	    wakeBuddy = ct.getWakeFriend();
