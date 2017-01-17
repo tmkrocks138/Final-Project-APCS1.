@@ -19,7 +19,7 @@ Some of things to try in the code include...
 
 Some of the unresolved bugs we have and things we were unable to accomplish include
 <ul>
-
+<li>We were unable to make the quiz section in GUI for the final product</li>
 </ul>
 <br><br>
 
