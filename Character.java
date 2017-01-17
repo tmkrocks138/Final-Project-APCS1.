@@ -74,10 +74,8 @@ public class Character extends JFrame implements ActionListener {
 	    characterName = name.getText();
 	    subject = (String)subjects.getSelectedItem();
 	    trait = (String)traits.getSelectedItem();
-//	    System.out.println("Name: " + characterName + "\n" +
-//			       "Subject: " + subject + "\n" +
-//			       "Trait: " + trait);
-//	    System.exit(0);
+	    System.out.println("Oh hey look, you almost forgot your ID card. Be sure not to lose it!");
+	    printIDcard();
 	    setVisible(false);
 	}	
     }
@@ -91,6 +89,32 @@ public class Character extends JFrame implements ActionListener {
     public String getTrait() {
 	return trait;
     }
-    
 
+    public void printIDcard() {
+	
+	String ID = ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,\n" +
+	    "^                               ^\n";
+	String name = "^ Name: " + characterName; 
+	while ( name.length() != 32 ) {
+	    name += " ";
+	}
+	ID += name + "^\n";
+	String clas = "^ Subject: " + subject;
+	while ( clas.length() != 32 ) {
+	    clas += " ";
+	}
+	ID += clas + "^\n";
+	String traitx = "^ Trait: " + trait;
+	while ( traitx.length() != 32 ) {
+	    traitx += " ";
+	}
+	ID += traitx + "^\n";
+	ID += "^                               ^\n" +
+	    "`````````````````````````````````\n";
+	if ( !(characterName.matches("[a-zA-Z]+")) ) {
+	    ID += "\n(You might want to enter a better name)";
+	}
+
+	System.out.println(ID);
+    }
 }
