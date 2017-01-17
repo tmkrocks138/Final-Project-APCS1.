@@ -1,19 +1,37 @@
 # Final-Project-APCS1.
 
-<h2> Create a new character </h2>
-<p> 
-Enter your name <br>
-Choose a subject <br>
-Choose a trait
-</p>
+<h1><b> DAY IN THE LIFE OF A STUY STUDENT!!!</b> </h1><br><br>
 
-<h2> Friends </h2>
+This project is a Choose Your Own Adventure game where the user plays as an ordinary Stuy Student<br>
+In the begining you choose your personality, randomly get assigned a friend, and make decisions thoughout the day.<br>
+These factors will effect your overall score at the end.<br>
+(DISCLAIMER: It is impossible to get a full score because Stuy students can't "have it all")<br><br>
 
-<h2> Storyline </h2>
+Although at first glance this may seem like just a boring terminal game, there are many secret gems in the adventure.<br>
+Some of things to try in the code include...
+<ul>
+<li>Snoozing the alarm clock(The First Choice)</li>
+<li>Waking up your friend(not always an option)</li>
+<li>Seeing where different choices take you, not all options lead you to the same place</li>
+</ul>
+<br><br>
 
-<h2> Minigames </h2>
 
-<p>
-<b>Wake Up Friend:</b>
-Wake up your friend who fell in sleep in class before your teacher notices.
-</p>
+Some of the unresolved bugs we have and things we were unable to accomplish include
+<ul>
+<li>We were unable to make the quiz section in GUI for the final product</li>
+</ul>
+<br><br>
+
+To compile our project you just have to compile Final.java.<br> 
+<ul>
+<li>All of the components pass through this one class so you just compile and run Final.java</li>
+</ul>
+<br><br>
+
+Using our program is very easy, since it is just a game.<br>
+<ul>
+<li>Although the instructions are in the program, one must have common sense to get through a day at Stuy.</li>
+</ul>
+<br>
+

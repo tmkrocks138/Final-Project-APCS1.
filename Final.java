@@ -75,10 +75,13 @@ boolean uplate = gm.getLate();
 	if (!uCut){
 	    sleepInClass = ct.getSleep();
 	}
+	
 	String wakeBuddy="NA";
 	if(!uCut){
 	    wakeBuddy = ct.getWakeFriend();
 	}
+	boolean winWakeUp = ct.getWake();
+	int quizClass = ct.getQS();
 	
 
 
@@ -107,7 +110,7 @@ System.out.println("");
 	int social = 0;
 
 	if (uplate){
-	    relax += 2;
+	    relax += 3;
 	}
 
 	else if (!uplate){
@@ -118,7 +121,7 @@ System.out.println("");
 	    if(cutWhere.equals("1")){
 		social += 3;
 		if (bffCut){
-		    social += 2;
+		    social += 1;
 		}
 	    }
 	    else if (cutWhere.equals("2")){
@@ -132,17 +135,27 @@ System.out.println("");
 	}
 
 	else if (!uCut){
-	    school += 3;
+	    school += 2;
 	    if (sleepInClass){
 		relax+=1;
 	    }
 	    if(wakeBuddy.equals("yes")){
 		social += 2;
+		if(winWakeUp){
+		    social += 2;
+		}
 	    }
+	    if(quizClass > 0){
+		school += 1;
+	    }
+	    if(quizClass == 3){
+		school += 1;
+	    }
+	    
 	}
 	
 	if (late){
-	    social += 3;
+	    social += 1;
 	}
 	
 	else if (!late){
@@ -151,7 +164,7 @@ System.out.println("");
 
 	
 	if (homeChoice.equals("1")){
-	    school += 4;
+	    school += 3;
 	}
 	else if (homeChoice.equals("2")){
 	    school += 1;

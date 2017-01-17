@@ -64,17 +64,21 @@ public class WakeUpFriend extends JFrame implements ActionListener {
 	    }
 	}
 	if ( event.equals("Submitted") ) {
-	    System.out.println(getClicks());
-	    System.exit(0);
+//	    System.out.println(getClicks());
+//	    System.exit(0);
+	setVisible(false);
 	}
     }
 
     public String getClicks() {
 	return counter+"";
     }
-    
+
+/*    
     public static void main(String[] args) {
 	WakeUpFriend a = new WakeUpFriend();
 	a.setVisible(true);
     }
+*/
+
 }
