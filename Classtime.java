@@ -8,15 +8,16 @@ public class Classtime{
     public boolean sleep;    
     public String wakeFriend;
     public boolean wake = false;
+    public int quizScore= -1;
     
 
     public boolean getSleep(){
 	return sleep;
     }
 
-public boolean getWake(){
+    public boolean getWake(){
 	return wake;
-}
+    }
 
     public boolean getCut(){
 	return cut;
@@ -25,9 +26,12 @@ public boolean getWake(){
     public String getWhere(){
 	return where;
     }
-public String getWakeFriend(){
+    public String getWakeFriend(){
 	return wakeFriend;
-}
+    }
+    public int getQS(){
+	return quizScore;
+    }
     
     public void scene(String trait, boolean friendCut, String subject, boolean late){
 	Scanner user_input = new Scanner( System.in );
@@ -41,12 +45,20 @@ public String getWakeFriend(){
 	else{
 	    cut = false;
 	    this.noCutScene(trait, subject, late);
+	    System.out.println("");
+	    System.out.println("Type ok to continue");
+	    user_input.next();
+	    System.out.println("");
+	    Quiz q = new Quiz();
+	    q.Scene(subject);
+	    quizScore = q.getScore();
+	    
 	}
 	
 	System.out.println("");
         System.out.println("Type ok to continue");
 	user_input.next();
-      System.out.println("");
+	System.out.println("");
 
     }
 
@@ -112,18 +124,18 @@ public String getWakeFriend(){
            	System.out.println("Type ok to continue");
 		user_input.next();
 		if (Integer.parseInt(w.getClicks()) <=5){
-			System.out.println("You didn't tap them enough and they didn't wake up");
+		    System.out.println("You didn't tap them enough and they didn't wake up");
 		}
 
 		else if(Integer.parseInt(w.getClicks())<= 10){
-		System.out.println("Yay, you looked out for your friend");
-		wake = true;
+		    System.out.println("Yay, you looked out for your friend");
+		    wake = true;
 		}
 	
 		else {
-		System.out.println("You poked them to many times and they got startled");
-System.out.println("You both got a glare from the teacher :(");
-}
+		    System.out.println("You poked them to many times and they got startled");
+		    System.out.println("You both got a glare from the teacher :(");
+		}
             }
 
 	}
