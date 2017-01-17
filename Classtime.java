@@ -7,10 +7,16 @@ public class Classtime{
     public String where;
     public boolean sleep;    
     public String wakeFriend;
+    public boolean wake = false;
+    public int quizScore= -1;
     
 
     public boolean getSleep(){
 	return sleep;
+    }
+
+    public boolean getWake(){
+	return wake;
     }
 
     public boolean getCut(){
@@ -20,9 +26,12 @@ public class Classtime{
     public String getWhere(){
 	return where;
     }
-public String getWakeFriend(){
+    public String getWakeFriend(){
 	return wakeFriend;
-}
+    }
+    public int getQS(){
+	return quizScore;
+    }
     
     public void scene(String trait, boolean friendCut, String subject, boolean late){
 	Scanner user_input = new Scanner( System.in );
@@ -36,10 +45,21 @@ public String getWakeFriend(){
 	else{
 	    cut = false;
 	    this.noCutScene(trait, subject, late);
+	    System.out.println("");
+	    System.out.println("Type ok to continue");
+	    user_input.next();
+	    System.out.println("");
+	    Quiz q = new Quiz();
+	    q.Scene(subject);
+	    quizScore = q.getScore();
+	    
 	}
 	
 	System.out.println("");
-      
+        System.out.println("Type ok to continue");
+	user_input.next();
+	System.out.println("");
+
     }
 
     public void cutScene (boolean friendCut){
@@ -72,9 +92,8 @@ public String getWakeFriend(){
 	int num = (int)(Math.random() * 10)+1;
         Scanner user_input = new Scanner( System.in );	
         System.out.println("");
-        System.out.println(subject);
-	System.out.println("It seems to be a good idea to go to class because your normal teacher was there");
-	System.out.println("The "+ subject +" class you were in was particularly boring");
+       	System.out.println("It seems to be a good idea to go to class because your normal teacher was there");
+	System.out.println(subject +" class you were in was particularly boring");
 	System.out.println("");
 	
 	if(trait == "Lazy" && !lateToSchool){
@@ -100,9 +119,24 @@ public String getWakeFriend(){
 		System.out.println("Sadly, your friend gets yelled at. However it is better them than you");
 	    }
 	    else{
-		System.out.println("");
-		System.out.println("Yay, you looked out for your friend");
+                WakeUpFriend w = new WakeUpFriend();
+                w.setVisible(true);
+           	System.out.println("Type ok to continue");
+		user_input.next();
+		if (Integer.parseInt(w.getClicks()) <=5){
+		    System.out.println("You didn't tap them enough and they didn't wake up");
 		}
+
+		else if(Integer.parseInt(w.getClicks())<= 10){
+		    System.out.println("Yay, you looked out for your friend");
+		    wake = true;
+		}
+	
+		else {
+		    System.out.println("You poked them to many times and they got startled");
+		    System.out.println("You both got a glare from the teacher :(");
+		}
+            }
 
 	}
     }
