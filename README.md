@@ -24,8 +24,14 @@ Some of the unresolved bugs we have and things we were unable to accomplish incl
 <br><br>
 
 To compile our project you just have to compile Final.java.<br> 
-All of the components pass through this one class so you just compile and run Final.java<br><br>
+<ul>
+<li>All of the components pass through this one class so you just compile and run Final.java</li>
+</ul>
+<br><br>
 
 Using our program is very easy, since it is just a game.<br>
-Although the instructions are in the program, one must have common sense to get through a day at Stuy.<br>
+<ul>
+<li>Although the instructions are in the program, one must have common sense to get through a day at Stuy.</li>
+</ul>
+<br>
 
