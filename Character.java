@@ -74,10 +74,9 @@ public class Character extends JFrame implements ActionListener {
 	    characterName = name.getText();
 	    subject = (String)subjects.getSelectedItem();
 	    trait = (String)traits.getSelectedItem();
-/*	    System.out.println("Name: " + characterName + "\n" +
-			       "Subject: " + subject + "\n" +
-			       "Trait: " + trait);
-*/
+//	    System.out.println("Name: " + characterName + "\n" +
+//			       "Subject: " + subject + "\n" +
+//			       "Trait: " + trait);
 //	    System.exit(0);
 	    setVisible(false);
 	}	
